@@ -1,0 +1,13 @@
+{
+  "name": "backend-agility",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "frederic T",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
