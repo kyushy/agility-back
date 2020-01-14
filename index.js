@@ -9,9 +9,9 @@ app.use(cors())
 
 app.get('/section/:id', (req, res) => {
     if(req.params.id === 'poc')
-        res.status(200)
+        res.status(200).json({ access: 'ok' })
     else
-        res.status(403)
+        res.status(403).json({ access: 'denied' })
 })
 
 app.listen(port, () => console.log('server started on port', port))
