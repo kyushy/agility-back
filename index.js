@@ -1,5 +1,11 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
+
+const port = process.env.PORT || 3000
+
+
+app.use(cors())
 
 app.get('/section/:id', (req, res) => {
     if(req.params.id === 'poc')
@@ -8,4 +14,4 @@ app.get('/section/:id', (req, res) => {
         res.status(403)
 })
 
-app.listen(3000, () => console.log('server started'))
+app.listen(port, () => console.log('server started on port', port))
