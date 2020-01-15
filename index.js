@@ -9,7 +9,7 @@ app.use(cors())
 
 app.get('/section/:id', (req, res) => {
     if(req.params.id === 'poc')
-        res.status(200).json({ access: 'ok' })
+        res.status(200).json({ access: 'ok', template: 'base' })
     else
         res.status(200).json({ access: 'denied' })
 })
