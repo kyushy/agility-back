@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 const port = process.env.PORT || 3030
 
-const urlmongo = `mongodb+srv://${process.env.DB_USER}:${DB_PASSWORD}@engitdb-hwjyk.mongodb.net/test?retryWrites=true&w=majority`;
+const urlmongo = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@engitdb-hwjyk.mongodb.net/test?retryWrites=true&w=majority`;
 mongoose.connect(urlmongo);
 
 //Mongo Connection
